@@ -1,5 +1,5 @@
 {
-  "name": "medical-web-store",
+  "name": "medical-website",
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
@@ -7,7 +7,7 @@
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
-    "serve:ssr:medical-web-store": "node dist/medical-web-store/server/server.mjs"
+    "serve:ssr:medical-website": "node dist/medical-website/server/server.mjs"
   },
   "private": true,
   "dependencies": {
