@@ -4,8 +4,8 @@ export default function Home() {
   return (
     <main>
       <div className="bg-white">
+        {/* Navbar */}
         <header className="absolute inset-x-0 top-0 z-50">
-          {/* Navbar */}
           <nav className="flex items-center justify-between p-6 lg:px-8" aria-label="Global">
             <div className="flex lg:flex-1">
               <a href="#" className="-m-1.5 p-1.5">
@@ -22,13 +22,13 @@ export default function Home() {
               </button>
             </div>
             <div className="hidden lg:flex lg:gap-x-12">
-              <a href="#" className="text-sm/6 font-semibold text-gray-900">Product</a>
-              <a href="#" className="text-sm/6 font-semibold text-gray-900">Features</a>
-              <a href="#" className="text-sm/6 font-semibold text-gray-900">Marketplace</a>
-              <a href="#" className="text-sm/6 font-semibold text-gray-900">Company</a>
+              <a href="Products" className="text-sm/6 font-semibold text-gray-900">Products</a>
+              <a href="Services" className="text-sm/6 font-semibold text-gray-900">Services</a>
+              <a href="Contact-Us" className="text-sm/6 font-semibold text-gray-900">Contact Us</a>
+              <a href="About" className="text-sm/6 font-semibold text-gray-900">About</a>
             </div>
             <div className="hidden lg:flex lg:flex-1 lg:justify-end">
-              <a href="#" className="text-sm/6 font-semibold text-gray-900">Log in <span aria-hidden="true">&rarr;</span></a>
+              <a href="Login" className="text-sm/6 font-semibold text-gray-900">Log in <span aria-hidden="true">&rarr;</span></a>
             </div>
           </nav>
           {/* <!-- Mobile menu, show/hide based on menu open state. --> */}
@@ -315,7 +315,6 @@ export default function Home() {
             </ul>
           </div>
         </div>
-
 
         {/* Contact section */}
         <div className="isolate bg-white px-6 py-24 sm:py-32 lg:px-8">
