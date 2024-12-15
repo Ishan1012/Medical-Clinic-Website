@@ -1,5 +1,7 @@
 "use client";
 
+import Link from "next/link";
+
 export default function Home() {
   return (
     <main>
@@ -8,10 +10,10 @@ export default function Home() {
         <header className="absolute inset-x-0 top-0 z-50">
           <nav className="flex items-center justify-between p-6 lg:px-8" aria-label="Global">
             <div className="flex lg:flex-1">
-              <a href="#" className="-m-1.5 p-1.5">
+              <Link href="#" className="-m-1.5 p-1.5">
                 <span className="sr-only">XYZ Medical Store</span>
                 <img className="h-8 w-auto" src="https://tailwindui.com/plus/img/logos/mark.svg?color=indigo&shade=600" alt=""></img>
-              </a>
+              </Link>
             </div>
             <div className="flex lg:hidden">
               <button type="button" className="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-gray-700">
@@ -22,13 +24,13 @@ export default function Home() {
               </button>
             </div>
             <div className="hidden lg:flex lg:gap-x-12">
-              <a href="Products" className="text-sm/6 font-semibold text-gray-900">Products</a>
-              <a href="Services" className="text-sm/6 font-semibold text-gray-900">Services</a>
-              <a href="Contact-Us" className="text-sm/6 font-semibold text-gray-900">Contact Us</a>
-              <a href="About" className="text-sm/6 font-semibold text-gray-900">About</a>
+              <Link href="products" className="text-sm/6 font-semibold text-gray-900">Products</Link>
+              <Link href="services" className="text-sm/6 font-semibold text-gray-900">Services</Link>
+              <Link href="contact-us" className="text-sm/6 font-semibold text-gray-900">Contact Us</Link>
+              <Link href="about" className="text-sm/6 font-semibold text-gray-900">About</Link>
             </div>
             <div className="hidden lg:flex lg:flex-1 lg:justify-end">
-              <a href="Login" className="text-sm/6 font-semibold text-gray-900">Log in <span aria-hidden="true">&rarr;</span></a>
+              <Link href="login" className="text-sm/6 font-semibold text-gray-900">Log in <span aria-hidden="true">&rarr;</span></Link>
             </div>
           </nav>
           {/* <!-- Mobile menu, show/hide based on menu open state. --> */}
@@ -37,10 +39,10 @@ export default function Home() {
             <div className="fixed inset-0 z-50"></div>
             <div className="fixed inset-y-0 right-0 z-50 w-full overflow-y-auto bg-white px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
               <div className="flex items-center justify-between">
-                <a href="#" className="-m-1.5 p-1.5">
+                <Link href="#" className="-m-1.5 p-1.5">
                   <span className="sr-only">Your Company</span>
                   <img className="h-8 w-auto" src="https://tailwindui.com/plus/img/logos/mark.svg?color=indigo&shade=600" alt=""></img>
-                </a>
+                </Link>
                 <button type="button" className="-m-2.5 rounded-md p-2.5 text-gray-700">
                   <span className="sr-only">Close menu</span>
                   <svg className="size-6" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" aria-hidden="true" data-slot="icon">
@@ -51,13 +53,13 @@ export default function Home() {
               <div className="mt-6 flow-root">
                 <div className="-my-6 divide-y divide-gray-500/10">
                   <div className="space-y-2 py-6">
-                    <a href="#" className="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-gray-900 hover:bg-gray-50">Product</a>
-                    <a href="#" className="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-gray-900 hover:bg-gray-50">Features</a>
-                    <a href="#" className="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-gray-900 hover:bg-gray-50">Marketplace</a>
-                    <a href="#" className="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-gray-900 hover:bg-gray-50">Company</a>
+                    <Link href="#" className="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-gray-900 hover:bg-gray-50">Product</Link>
+                    <Link href="#" className="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-gray-900 hover:bg-gray-50">Features</Link>
+                    <Link href="#" className="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-gray-900 hover:bg-gray-50">Marketplace</Link>
+                    <Link href="#" className="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-gray-900 hover:bg-gray-50">Company</Link>
                   </div>
                   <div className="py-6">
-                    <a href="#" className="-mx-3 block rounded-lg px-3 py-2.5 text-base/7 font-semibold text-gray-900 hover:bg-gray-50">Log in</a>
+                    <Link href="#" className="-mx-3 block rounded-lg px-3 py-2.5 text-base/7 font-semibold text-gray-900 hover:bg-gray-50">Log in</Link>
                   </div>
                 </div>
               </div>
@@ -73,15 +75,15 @@ export default function Home() {
           <div className="mx-auto max-w-2xl py-32 sm:py-48 lg:py-40">
             {/* <div className="hidden sm:mb-8 sm:flex sm:justify-center">
               <div className="relative rounded-full px-3 py-1 text-sm/6 text-gray-600 ring-1 ring-gray-900/10 hover:ring-gray-900/20">
-                Announcing our next round of funding. <a href="#" className="font-semibold text-indigo-600"><span className="absolute inset-0" aria-hidden="true"></span>Read more <span aria-hidden="true">&rarr;</span></a>
+                Announcing our next round of funding. <Link href="#" className="font-semibold text-indigo-600"><span className="absolute inset-0" aria-hidden="true"></span>Read more <span aria-hidden="true">&rarr;</span></Link>
               </div>
             </div> */}
             <div className="text-center">
               <h1 className="text-balance text-5xl font-semibold tracking-tight text-gray-900 sm:text-7xl">XYZ Medical store</h1>
               <p className="mt-8 text-pretty text-lg font-medium text-gray-500 sm:text-xl/8">Your Trusted Online Medical Store: Health Delivered to Your Doorstep!</p>
               <div className="mt-10 flex items-center justify-center gap-x-6">
-                <a href="#" className="rounded-md bg-indigo-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">Get started</a>
-                <a href="#" className="text-sm/6 font-semibold text-gray-900">Learn more <span aria-hidden="true">→</span></a>
+                <Link href="#" className="rounded-md bg-indigo-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">Get started</Link>
+                <Link href="#" className="text-sm/6 font-semibold text-gray-900">Learn more <span aria-hidden="true">→</span></Link>
               </div>
             </div>
           </div>
@@ -127,8 +129,8 @@ export default function Home() {
                   <h2 className="text-balance text-3xl font-semibold tracking-tight text-white sm:text-4xl">Boost your immunity. Start using our app today.</h2>
                   <p className="mt-6 text-pretty text-lg/8 text-gray-300">Ac euismod vel sit maecenas id pellentesque eu sed consectetur. Malesuada adipiscing sagittis vel nulla.</p>
                   <div className="mt-10 flex items-center justify-center gap-x-6 lg:justify-start">
-                    <a href="#" className="rounded-md bg-white px-3.5 py-2.5 text-sm font-semibold text-gray-900 shadow-sm hover:bg-gray-100 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white">Get started</a>
-                    <a href="#" className="text-sm/6 font-semibold text-white">Learn more <span aria-hidden="true">→</span></a>
+                    <Link href="#" className="rounded-md bg-white px-3.5 py-2.5 text-sm font-semibold text-gray-900 shadow-sm hover:bg-gray-100 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white">Get started</Link>
+                    <Link href="#" className="text-sm/6 font-semibold text-white">Learn more <span aria-hidden="true">→</span></Link>
                   </div>
                 </div>
                 <div className="relative mt-16 h-80 lg:mt-8">
@@ -152,14 +154,14 @@ export default function Home() {
                 <img className="rounded-2xl" src="img3.jpg"></img>
                 <div className="flex items-center gap-x-4 text-xs">
                   <time dateTime="2020-03-16" className="text-gray-500">Mar 16, 2020</time>
-                  <a href="#" className="relative z-10 rounded-full bg-gray-50 px-3 py-1.5 font-medium text-gray-600 hover:bg-gray-100">Marketing</a>
+                  <Link href="#" className="relative z-10 rounded-full bg-gray-50 px-3 py-1.5 font-medium text-gray-600 hover:bg-gray-100">Marketing</Link>
                 </div>
                 <div className="group relative">
                   <h3 className="mt-3 text-lg/6 font-semibold text-gray-900 group-hover:text-gray-600">
-                    <a href="#">
+                    <Link href="#">
                       <span className="absolute inset-0"></span>
                       Boost your conversion rate
-                    </a>
+                    </Link>
                   </h3>
                   <p className="mt-5 line-clamp-3 text-sm/6 text-gray-600">Illo sint voluptas. Error voluptates culpa eligendi. Hic vel totam vitae illo. Non aliquid explicabo necessitatibus unde. Sed exercitationem placeat consectetur nulla deserunt vel. Iusto corrupti dicta.</p>
                 </div>
@@ -167,10 +169,10 @@ export default function Home() {
                   <img src="https://images.unsplash.com/photo-1519244703995-f4e0f30006d5?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80" alt="" className="size-10 rounded-full bg-gray-50"></img>
                   <div className="text-sm/6">
                     <p className="font-semibold text-gray-900">
-                      <a href="#">
+                      <Link href="#">
                         <span className="absolute inset-0"></span>
                         Michael Foster
-                      </a>
+                      </Link>
                     </p>
                     <p className="text-gray-600">Co-Founder / CTO</p>
                   </div>
@@ -180,14 +182,14 @@ export default function Home() {
                 <img className="rounded-2xl" src="img3.jpg"></img>
                 <div className="flex items-center gap-x-4 text-xs">
                   <time dateTime="2020-03-16" className="text-gray-500">Mar 16, 2020</time>
-                  <a href="#" className="relative z-10 rounded-full bg-gray-50 px-3 py-1.5 font-medium text-gray-600 hover:bg-gray-100">Marketing</a>
+                  <Link href="#" className="relative z-10 rounded-full bg-gray-50 px-3 py-1.5 font-medium text-gray-600 hover:bg-gray-100">Marketing</Link>
                 </div>
                 <div className="group relative">
                   <h3 className="mt-3 text-lg/6 font-semibold text-gray-900 group-hover:text-gray-600">
-                    <a href="#">
+                    <Link href="#">
                       <span className="absolute inset-0"></span>
                       Boost your conversion rate
-                    </a>
+                    </Link>
                   </h3>
                   <p className="mt-5 line-clamp-3 text-sm/6 text-gray-600">Illo sint voluptas. Error voluptates culpa eligendi. Hic vel totam vitae illo. Non aliquid explicabo necessitatibus unde. Sed exercitationem placeat consectetur nulla deserunt vel. Iusto corrupti dicta.</p>
                 </div>
@@ -195,10 +197,10 @@ export default function Home() {
                   <img src="https://images.unsplash.com/photo-1519244703995-f4e0f30006d5?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80" alt="" className="size-10 rounded-full bg-gray-50"></img>
                   <div className="text-sm/6">
                     <p className="font-semibold text-gray-900">
-                      <a href="#">
+                      <Link href="#">
                         <span className="absolute inset-0"></span>
                         Michael Foster
-                      </a>
+                      </Link>
                     </p>
                     <p className="text-gray-600">Co-Founder / CTO</p>
                   </div>
@@ -208,14 +210,14 @@ export default function Home() {
                 <img className="rounded-2xl" src="img3.jpg"></img>
                 <div className="flex items-center gap-x-4 text-xs">
                   <time dateTime="2020-03-16" className="text-gray-500">Mar 16, 2020</time>
-                  <a href="#" className="relative z-10 rounded-full bg-gray-50 px-3 py-1.5 font-medium text-gray-600 hover:bg-gray-100">Marketing</a>
+                  <Link href="#" className="relative z-10 rounded-full bg-gray-50 px-3 py-1.5 font-medium text-gray-600 hover:bg-gray-100">Marketing</Link>
                 </div>
                 <div className="group relative">
                   <h3 className="mt-3 text-lg/6 font-semibold text-gray-900 group-hover:text-gray-600">
-                    <a href="#">
+                    <Link href="#">
                       <span className="absolute inset-0"></span>
                       Boost your conversion rate
-                    </a>
+                    </Link>
                   </h3>
                   <p className="mt-5 line-clamp-3 text-sm/6 text-gray-600">Illo sint voluptas. Error voluptates culpa eligendi. Hic vel totam vitae illo. Non aliquid explicabo necessitatibus unde. Sed exercitationem placeat consectetur nulla deserunt vel. Iusto corrupti dicta.</p>
                 </div>
@@ -223,10 +225,10 @@ export default function Home() {
                   <img src="https://images.unsplash.com/photo-1519244703995-f4e0f30006d5?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80" alt="" className="size-10 rounded-full bg-gray-50"></img>
                   <div className="text-sm/6">
                     <p className="font-semibold text-gray-900">
-                      <a href="#">
+                      <Link href="#">
                         <span className="absolute inset-0"></span>
                         Michael Foster
-                      </a>
+                      </Link>
                     </p>
                     <p className="text-gray-600">Co-Founder / CTO</p>
                   </div>
@@ -236,14 +238,14 @@ export default function Home() {
                 <img className="rounded-2xl" src="img3.jpg"></img>
                 <div className="flex items-center gap-x-4 text-xs">
                   <time dateTime="2020-03-16" className="text-gray-500">Mar 16, 2020</time>
-                  <a href="#" className="relative z-10 rounded-full bg-gray-50 px-3 py-1.5 font-medium text-gray-600 hover:bg-gray-100">Marketing</a>
+                  <Link href="#" className="relative z-10 rounded-full bg-gray-50 px-3 py-1.5 font-medium text-gray-600 hover:bg-gray-100">Marketing</Link>
                 </div>
                 <div className="group relative">
                   <h3 className="mt-3 text-lg/6 font-semibold text-gray-900 group-hover:text-gray-600">
-                    <a href="#">
+                    <Link href="#">
                       <span className="absolute inset-0"></span>
                       Boost your conversion rate
-                    </a>
+                    </Link>
                   </h3>
                   <p className="mt-5 line-clamp-3 text-sm/6 text-gray-600">Illo sint voluptas. Error voluptates culpa eligendi. Hic vel totam vitae illo. Non aliquid explicabo necessitatibus unde. Sed exercitationem placeat consectetur nulla deserunt vel. Iusto corrupti dicta.</p>
                 </div>
@@ -251,10 +253,10 @@ export default function Home() {
                   <img src="https://images.unsplash.com/photo-1519244703995-f4e0f30006d5?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80" alt="" className="size-10 rounded-full bg-gray-50"></img>
                   <div className="text-sm/6">
                     <p className="font-semibold text-gray-900">
-                      <a href="#">
+                      <Link href="#">
                         <span className="absolute inset-0"></span>
                         Michael Foster
-                      </a>
+                      </Link>
                     </p>
                     <p className="text-gray-600">Co-Founder / CTO</p>
                   </div>
@@ -271,7 +273,7 @@ export default function Home() {
           <div className="mx-auto grid max-w-7xl gap-20 px-6 lg:px-8 xl:grid-row-3 content-center">
             <div className="max-w-xl">
               <h2 className="text-pretty text-white text-3xl font-semibold tracking-tight text-gray-900 sm:text-4xl">Meet our leadership</h2>
-              <p className="mt-6 text-lg/8 text-gray-600">We’re a dynamic group of individuals who are passionate about what we do and dedicated to delivering the best results for our clients.</p>
+              <p className="mt-6 text-lg/8 text-gray-600">We’re Link dynamic group of individuals who are passionate about what we do and dedicated to delivering the best results for our clients.</p>
             </div>
             <ul role="list" className="grid gap-x-8 gap-y-12 sm:grid-cols-2 sm:gap-y-16 xl:col-span-2">
               <li>
@@ -386,7 +388,7 @@ export default function Home() {
                 </div>
                 <label className="text-sm/6 text-gray-600" id="switch-1-label">
                   By selecting this, you agree to our{" "}
-                  <a href="#" className="font-semibold text-indigo-600">privacy{" "}policy</a>.
+                  <Link href="#" className="font-semibold text-indigo-600">privacy{" "}policy</Link>.
                 </label>
               </div>
             </div>
