@@ -22,9 +22,9 @@ export default function Home() {
               </button>
             </div>
             <div className="hidden lg:flex lg:gap-x-12">
-              <a href="#" className="text-sm/6 font-semibold text-gray-900">Product</a>
-              <a href="#" className="text-sm/6 font-semibold text-gray-900">Features</a>
-              <a href="#" className="text-sm/6 font-semibold text-gray-900">Marketplace</a>
+              <a href="Products" className="text-sm/6 font-semibold text-gray-900">Products</a>
+              <a href="Services" className="text-sm/6 font-semibold text-gray-900">Services</a>
+              <a href="Contact Us" className="text-sm/6 font-semibold text-gray-900">Contact Us</a>
               <a href="#" className="text-sm/6 font-semibold text-gray-900">Company</a>
             </div>
             <div className="hidden lg:flex lg:flex-1 lg:justify-end">
