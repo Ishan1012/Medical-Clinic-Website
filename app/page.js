@@ -24,11 +24,11 @@ export default function Home() {
             <div className="hidden lg:flex lg:gap-x-12">
               <a href="Products" className="text-sm/6 font-semibold text-gray-900">Products</a>
               <a href="Services" className="text-sm/6 font-semibold text-gray-900">Services</a>
-              <a href="Contact Us" className="text-sm/6 font-semibold text-gray-900">Contact Us</a>
-              <a href="#" className="text-sm/6 font-semibold text-gray-900">Company</a>
+              <a href="Contact-Us" className="text-sm/6 font-semibold text-gray-900">Contact Us</a>
+              <a href="About" className="text-sm/6 font-semibold text-gray-900">About</a>
             </div>
             <div className="hidden lg:flex lg:flex-1 lg:justify-end">
-              <a href="#" className="text-sm/6 font-semibold text-gray-900">Log in <span aria-hidden="true">&rarr;</span></a>
+              <a href="Login" className="text-sm/6 font-semibold text-gray-900">Log in <span aria-hidden="true">&rarr;</span></a>
             </div>
           </nav>
           {/* <!-- Mobile menu, show/hide based on menu open state. --> */}
@@ -315,7 +315,6 @@ export default function Home() {
             </ul>
           </div>
         </div>
-
 
         {/* Contact section */}
         <div className="isolate bg-white px-6 py-24 sm:py-32 lg:px-8">
